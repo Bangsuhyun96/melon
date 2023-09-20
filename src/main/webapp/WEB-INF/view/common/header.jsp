@@ -108,7 +108,7 @@
 		<c:if test="${!empty user}">
 			<div class="playsong_info_ck">
 				<input type="checkbox">
-				<p>3곡</p>
+				<p class="playlist_size">${pd.size()}곡</p>
 				<p>삭제</p>
 			</div>
 			<div class="playsong_list">

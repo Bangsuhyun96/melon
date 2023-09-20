@@ -136,7 +136,7 @@
         VALUES
             (#{albumId},
              comment_id_seq.nextval,
-             'admin',
+             #{memberId},
              #{commentDto.commentDetail},
              sysdate)
     </insert>

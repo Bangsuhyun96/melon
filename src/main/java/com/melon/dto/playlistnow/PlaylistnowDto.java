@@ -7,4 +7,5 @@ public class PlaylistnowDto {
 	private String songName;
 	private String artistName;
 	private String playTime;
+	private int dataCount;
 }

@@ -6,7 +6,8 @@
 		    SELECT
 		        S.SONG_NAME AS songName,
 		        AR.ARTIST_NAME AS artistName,
-		        S.PLAYTIME AS playTime
+		        S.PLAYTIME AS playTime,
+		        COUNT(*) OVER () AS dataCount
 		    FROM
 		        SONG S, ARTIST AR, MEMBER M, PLAYLIST_NOW PN, PLAYLIST_NOW_SONG PNS
 		    WHERE
