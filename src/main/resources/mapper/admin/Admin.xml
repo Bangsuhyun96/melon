@@ -55,7 +55,7 @@
         INSERT INTO ARTIST (ARTIST_ID, ARTIST_NAME, DEBUT, AGENCY, ACTIVITY_TYPE,
                             ARTIST_PRO, ARTIST_LIKE, ARTIST_FILE)
         values (
-                artist_seq.nextval,
+                ARTIST_ID_SEQ.nextval,
                 #{artistName},
                 #{debut},
                 #{agency},
@@ -78,7 +78,7 @@
                            ALBUM_LIKE
                            )
         values (
-                album_seq.nextval,
+                ALBUM_ID_SEQ.nextval,
                 #{albumName},
                 #{releaseDate},
                 #{albumType},
@@ -97,10 +97,11 @@
                           SONG_LIKE,
                           GENRE_ID,
                           ALBUM_ID,
-                          ARTIST_ID
+                          ARTIST_ID,
+                          TITLE
         )
         VALUES (
-                song_seq.nextval,
+                SONG_ID_SEQ.nextval,
                 #{songName},
                 #{playTime},
                 #{lyrics},
@@ -108,7 +109,8 @@
                 0,
                 #{genreId},
                 #{albumId},
-                #{artistId}
+                #{artistId},
+                0
                )
     </insert>
 
@@ -141,7 +143,7 @@
     <select id="findAllMember" resultType="com.melon.dto.admin.AdminMemberDto">
         SELECT
             NAME as name,
-            NICK as nick,
+            MEMBER_ID as id,
             BIRTHDAY as birthday,
             TEL as tel,
             EMAIL as email,
@@ -181,7 +183,7 @@
         SET
             m.TICKET_ID = (SELECT TICKET_ID FROM TICKET WHERE TICKET_NAME = #{ticketName})
         WHERE
-            m.NAME = #{userName}
+            m.MEMBER_ID = #{userName}
 
     </update>
 

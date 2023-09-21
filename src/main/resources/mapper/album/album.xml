@@ -135,7 +135,7 @@
             (ALBUM_ID, COMMENT_ID, MEMBER_ID, COMMENT_DETAIL, COMMENT_DATE)
         VALUES
             (#{albumId},
-             comment_id_seq.nextval,
+             COMMENT_ID_SEQ.nextval,
              #{memberId},
              #{commentDto.commentDetail},
              sysdate)

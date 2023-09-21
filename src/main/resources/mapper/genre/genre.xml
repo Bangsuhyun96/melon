@@ -18,7 +18,7 @@
         INSERT INTO 
         	USER_LIKE (LIKE_CNT, MEMBER_ID, GENRE_ID)
         VALUES
-        	(id_seq.nextval, 'USER', #{genreCategory})
+        	(LIKE_CNT_SEQ.nextval, 'USER', #{genreCategory})
     </insert>
 
 	<delete id="deleteGenreLike" parameterType="int">

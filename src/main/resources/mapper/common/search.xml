@@ -3,20 +3,18 @@
 <mapper namespace="com.melon.dao.common.ISearchDao">
     <select id="searchSong" resultType="com.melon.dto.common.SearchDto" parameterType="string">
         SELECT S.SONG_NAME AS songName,
-               A.ALBUM_NAME AS albumName,
-               AR.ARTIST_NAME AS artistName,
-               G.GENRE_NAME AS genre,
-               A.ALBUM_ID AS albumId,
-               A.ALBUM_IMG AS albumImg,
-               AR.ARTIST_ID AS artistId
+                        A.ALBUM_NAME AS albumName,
+                        AR.ARTIST_NAME AS artistName,
+                        G.GENRE_NAME AS genre,
+                        A.ALBUM_ID AS albumId,
+                        A.ALBUM_IMG AS albumImg,
+                        AR.ARTIST_ID AS artistId
         FROM SONG S
                  JOIN ALBUM A ON S.ALBUM_ID = A.ALBUM_ID
                  JOIN ARTIST AR ON S.ARTIST_ID = AR.ARTIST_ID
                  JOIN GENRE G ON S.GENRE_ID = G.GENRE_ID
         WHERE S.SONG_NAME LIKE '%' || #{songName} || '%'
-        OR
-            AR.ARTIST_NAME LIKE '%' || #{songName} || '%'
-        OR
-            A.ALBUM_NAME LIKE '%' || #{songName} || '%'
+           OR AR.ARTIST_NAME LIKE '%' || #{songName} || '%'
+           OR A.ALBUM_NAME LIKE '%' || #{songName} || '%'
     </select>
 </mapper>

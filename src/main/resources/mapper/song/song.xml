@@ -101,7 +101,7 @@
      	INSERT INTO
      		TIME_VIEWS(TIME_VIEW_ID, ADD_TIME, SONG_ID)
      	VALUES
-     		(ID_SEQ.NEXTVAL, SYSDATE, #{sondId})
+     		(TIME_VIEW_ID_SEQ.NEXTVAL, SYSDATE, #{sondId})
      </insert>
      
      <select id="selectNowChart" resultType="com.melon.dto.song.BeforeChartDto">

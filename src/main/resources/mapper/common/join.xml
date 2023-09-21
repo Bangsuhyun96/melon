@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.melon.dao.common.ILoginDao">
     <insert id="insertUser" parameterType="com.melon.dto.common.LoginDto">
-        INSERT INTO MEMBER (MEMBER_ID, PASSWORD, NAME, BIRTHDAY, TEL, EMAIL, NICK)
-        VALUES (#{m.id}, #{m.password}, #{m.name}, #{m.birthday}, #{m.tel}, #{m.email}, #{m.nick})
+        INSERT INTO MEMBER (MEMBER_ID, PASSWORD, NAME, BIRTHDAY, TEL, EMAIL, NICK, ROLE)
+        VALUES (#{m.id}, #{m.password}, #{m.name}, #{m.birthday}, #{m.tel}, #{m.email}, #{m.nick}, '0')
     </insert>
     <insert id="playList" parameterType="com.melon.dto.common.LoginDto">
-        INSERT INTO PLAYLIST_NOW (MEMBER_ID, PLAYLIST_CD)
-        VALUES (#{m.id}, playlist_now_seq.NEXTVAL)
+        INSERT INTO PLAYLIST_NOW (MEMBER_ID)
+        VALUES (#{m.id})
     </insert>
 </mapper>
