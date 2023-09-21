@@ -185,11 +185,12 @@ function showPlayLists(data) {
 	// 데이터를 받아와서 화면에 동적으로 업데이트
 	$(".playsong_list").empty();
 	const ul = $("<ul></ul>");
-	const play_now_song_name = document.querySelector('.play_now_song_name');
-	const play_now_artist_name = document.querySelector('.play_now_artist_name');
-	const play_now_song_time = document.querySelector('.play_now_song_time');
-	const playlist_main_img = document.querySelector('.playlist_main_img');
+	const play_now_song_name = document.querySelector('.play_now_song_name')
+	const play_now_artist_name = document.querySelector('.play_now_artist_name')
+	const play_now_song_time = document.querySelector('.play_now_song_time')
+	const playlist_main_img = document.querySelector('.playlist_main_img')
 	const playlist_size = document.querySelector('.playlist_size');
+
 	$.each(data, function(index, ad) {
 		const li = $("<li class='playsong_list_wrap'></li>");
 		const input_box = $("<input type='checkbox'>");

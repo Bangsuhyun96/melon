@@ -58,19 +58,19 @@ a {
     color: #04E632; transition: 0.2s all; cursor: pointer;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_hart_play > .hart_box > .hart_count{
-     font-size: 1.0rem; width: 70px; text-align: center; border: 0px solid white;
+    font-size: 1.0rem; width: 70px; text-align: center; border: 0px solid white;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_hart_play > .play_btn_box {
-     width: 491px; display: flex;
+    width: 491px; display: flex;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_hart_play > .play_btn_box > .play_btn{
-     border: 0px solid white; margin-right: 20px;
+    border: 0px solid white; margin-right: 20px; margin-left: 2px;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_hart_play > .play_btn i:hover{
     color: #04E632; transition: 0.2s all; cursor: pointer;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_hart_play > .rep_song{
-     margin-left: 10px;
+    margin-left: 10px;
 }
 .artist_top_text > .artist_top_text_box > .artist_top_agency {
     border: 0px solid white; height: 40px; line-height: 40px; display: flex;
@@ -202,6 +202,12 @@ table.song_tb {
 .head_th {
     border: 0px solid white; height: 60px; line-height: 60px; text-align: center;
 }
+.head_th tr th:nth-child(2) {
+    display: flex;
+}
+.head_th tr th:nth-child(2) p{
+    width: 70px;
+}
 .head_th tr th:nth-child(6) {
     border: 0px solid white; text-align: left; display: flex;
 }
@@ -315,7 +321,7 @@ table.song_tb {
     border: 0px solid white; width: 200px; height: 100px; margin-top: 20px;
 }
 .artist_album_text_box p{
-    border: 0px solid white; height: 30px; margin-top: 15px;
+    border: 0px solid white; height: 30px;
 }
 .artist_album_text_box a{
     font-size: 1.05rem;

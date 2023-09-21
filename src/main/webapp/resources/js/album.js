@@ -113,6 +113,10 @@ function writeSuccess() {
     return true; // 폼 제출 허용
 }
 
+function formatNumberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 $(document).ready(function() {
     let isLiked = localStorage.getItem('isLiked') === 'true';
     let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
@@ -156,7 +160,8 @@ $(document).ready(function() {
     });
 
     function updateLikeCount(likeCount) {
-        $('.hart_count').text(likeCount);
+        let formattedLikeCount = formatNumberWithCommas(likeCount);
+        $('.hart_count').text(formattedLikeCount);
         // 로컬 스토리지에 좋아요 수 저장
         localStorage.setItem('likeCount', likeCount);
     }

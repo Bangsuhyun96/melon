@@ -30,15 +30,15 @@ botton{}
 }
 
 /* 앨범 */
-.search_album tr{position: relative; display: flex; flex-wrap: wrap; width: 230px;}
+.search_album tr{position: relative; display: flex; flex-wrap: wrap; width: 230px; margin: 20px 17px;}
 .search_album h3{color:#fff; font-size: 1.1rem; line-height: 80px; height: 80px; width: 230px;}
 .search_album p{color:#fff; font-size: 1rem; line-height: 30px; height: 30px; width: 230px;}
 .search_album img{width: 230px; border-radius: 10px;}
-.search_album tbody{position: relative; width: 1000px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.search_album tbody{position: relative; display: flex; flex-wrap: wrap;}
 
 /* 아티스트 */
-.search_artist tr{position: relative; display: flex; flex-wrap: wrap; width: 230px; margin: 0 10px;}
+.search_artist tr{position: relative; display: flex; flex-wrap: wrap; width: 230px; margin: 0 50px 30px 50px;}
 .search_artist h3{color:#fff; font-size: 1.1rem; line-height: 80px; height: 80px; width: 230px;}
 .search_artist p{color:#fff; font-size: 1rem; line-height: 30px; height: 30px; width: 230px; text-align: center;}
 .search_artist img{width: 230px; border-radius: 50%;}
-.search_artist tbody{position: relative; width: 1000px; display: flex; flex-wrap: wrap; justify-content: flex-start;}
+.search_artist tbody{position: relative; display: flex; flex-wrap: wrap; justify-content: flex-start;}

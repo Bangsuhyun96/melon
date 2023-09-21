@@ -111,7 +111,7 @@ $(document).ready(function() {
             row.append(checkboxCell);
 
             // 곡명 컬럼
-            let songNameCell = $("<td>").html('<div class="artist_song_name_box_tb"><div class="artist_album_pic"><img src="/resources/Img/song/' + song.albumName + '.jpg" alt="노래 이미지"></div><div class="artist_song_name_tb"><p>' + song.songName + '</p></div></div>');
+            let songNameCell = $("<td>").html('<div class="artist_song_name_box_tb"><div class="artist_album_pic"><img src="/resources/Img/song/' + song.songName + '.jpg" alt="노래 이미지"></div><div class="artist_song_name_tb"><p>' + song.songName + '</p></div></div>');
             row.append(songNameCell);
 
             // 아티스트명 컬럼
@@ -119,7 +119,7 @@ $(document).ready(function() {
             row.append(artistNameCell);
 
             // 앨범명 컬럼
-            let albumNameCell = $("<td>").html('<a href="/album/' + song.albumId + '" class="artist_album_name_tb"><p>' + song.albumName + '</p></a>');
+            let albumNameCell = $("<td>").html('<a href="/album/' + song.albumId + '" class="artist_album_name_tb"><p>' + song.songName + '</p></a>');
             row.append(albumNameCell);
 
             // 발매일 컬럼
@@ -243,4 +243,3 @@ $(document).ready(function() {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 });
-

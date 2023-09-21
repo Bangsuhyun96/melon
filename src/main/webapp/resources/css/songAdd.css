@@ -30,7 +30,7 @@ input,button{border: none;}
 }
 
 .song_button .data_form {
-    width: 310px;
+    width: 341px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +56,10 @@ input,button{border: none;}
     background: none;
     border: 1px solid #aaaaaa;
     color: #ffffff;
+    width: 341px;
 }
 .song_button form div {
-    padding-left: 280px;
-    padding-top: 20px;
+    width: 341px;
 }
 
 .song_button form div input {
@@ -68,9 +68,36 @@ input,button{border: none;}
 
 input[type="file"]{border:none !important;}
 
-.song_button form div input:hover {
+.file_select {
+    border: 0px solid white; height: 100px; width: 341px;
+}
+.file_select label {
+    border: 0px solid white; height: 60px; line-height: 60px;
+}
+.file_select > .file_input_box {
+    border: 0px solid white; display: flex; align-items: center;
+    justify-content: center;
+}
+.file_select > .file_input_box > .song_file {
+    border: 0px solid white; width: 180px; line-height: 40px;
+}
+.song_button .data_form ul {
+    display: flex;
+    text-align: center;
+}
+.song_button > .data_form ul li{
+    width: 50px;
+}
+
+.song_button .data_form .radio_button input{
+    width: 30px;
+}
+.song_button .data_form .radio_button label{
+    font-size: 0.75rem;
+}
+
+.song_button .data_form .textarea_box div input:hover {
+    cursor: pointer;
     background: #04E632;
     color: #ffffff;
-    cursor: pointer;
-
 }
