@@ -23,21 +23,24 @@
 	<c:if test="${!empty user}">
 		<div class="header_right">
 			<c:if test="${user.role == 0}">
-				<form action="/ticket" method="GET">
-					<button>이용권 구매</button>
-				</form>
-				<form action="/login/logout" method="GET">
-					<button>로그아웃</button>
-				</form>
+
 			</c:if>
 			<c:if test="${user.role == 1}">
 				<form action="/admin" method="GET">
-					<button>관리자 페이지</button>
+
 				</form>
 				<form action="/login/logout" method="GET">
-					<button>로그아웃</button>
+
 				</form>
 			</c:if>
+		</div>
+		<div class="header_right">
+			<form action="/ticket" method="GET">
+<%--				<c:if test="${user.role == 1}"><button>관리자 페이지</button></c:if>--%>
+			</form>
+			<form action="/login/logout" method="GET">
+				<button>로그아웃</button>
+			</form>
 		</div>
 	</c:if>
 	<aside class="aside">

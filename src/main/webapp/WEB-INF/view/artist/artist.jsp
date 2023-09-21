@@ -105,7 +105,10 @@
                 <thead class="head_th">
                 <tr>
                     <th><input type="checkbox" class="check_tb"></th>
-                    <th><p>곡명</p></th>
+                    <th>
+                        <p>앨범</p>
+                        <p>곡명</p>
+                    </th>
                     <th><p>아티스트명</p></th>
                     <th><p>앨범명</p></th>
                     <th><p>발매일</p></th>
@@ -120,7 +123,7 @@
                         <td>
                             <div class="artist_song_name_box_tb">
                                 <div class="artist_album_pic">
-                                    <img src="<%= request.getContextPath() %>/resources/Img/song/${song.albumName}.jpg" alt="노래 이미지">
+                                    <img src="<%= request.getContextPath() %>/resources/Img/song/${song.songName}.jpg" alt="노래 이미지">
                                 </div>
                                 <div class="artist_song_name_tb"><p>${song.songName}</p></div>
                             </div>
@@ -152,15 +155,15 @@
                 <div class="artist_album_list">
                     <c:forEach items="${removeDuplication}" var="albums">
                         <input type="hidden" name="albumArtistId" value="${albums.artistId}" id="albumArtistId"/>
-                    <div class="artist_album_list_box">
-                        <div class="artist_album_list_img">
-                            <img src="<%= request.getContextPath() %>/resources/Img/song/${albums.albumName}.jpg" alt="노래 이미지">
+                        <div class="artist_album_list_box">
+                            <div class="artist_album_list_img">
+                                <a href="/album/${albums.albumId}"><img src="<%= request.getContextPath() %>/resources/Img/song/${albums.songName}.jpg" alt="노래 이미지"></a>
+                            </div>
+                            <div class="artist_album_text_box">
+                                <a href="/album/${albums.albumId}"><p>${albums.albumName}</p></a>
+                                <p>${albums.releaseDate}</p>
+                            </div>
                         </div>
-                        <div class="artist_album_text_box">
-                            <a href="/album/${albums.albumId}"><p>${albums.albumName}</p></a>
-                            <p>${albums.releaseDate}</p>
-                        </div>
-                    </div>
                     </c:forEach>
                 </div>
             </div>

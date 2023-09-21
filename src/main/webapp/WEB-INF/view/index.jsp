@@ -38,9 +38,9 @@
             <h3>TOP100 →</h3>
             <div class="main_topsong_wrap">
                 <table id="top_chart1">
-                    <tbody>
+                    <tbody style="position: relative; display: flex; justify-content: space-between; flex-wrap: wrap;">
                     <c:forEach var="item" items="${topMusic}" varStatus="loop">
-                        <tr>
+                        <tr style="margin: 10px">
                             <td class="topsong_fst">
                                 <a href="/album/${item.albumId}"><img src="<%=request.getContextPath()%>/resources/Img/song/${item.songName}.jpg"></a>
                             </td>
@@ -80,7 +80,7 @@
             </table>
         </div>
         <div class="my_music">
-            <h3>마이 뮤직 →</h3>
+<%--            <h3>마이 뮤직 →</h3>--%>
             <table>
                 <tbody>
                 <c:if test="${not empty myMusic}">

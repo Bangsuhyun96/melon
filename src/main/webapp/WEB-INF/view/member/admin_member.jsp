@@ -34,7 +34,7 @@
                         <tr>
                             <td><input type="checkbox"></td>
                             <td><p>${item.name}</p></td>
-                            <td><p>${item.nick}</p></td>
+                            <td><p>${item.id}</p></td>
                             <td><p>${item.birthday}</p></td>
                             <td><p>${item.tel}</p></td>
                             <td><p>${item.email}</p></td>

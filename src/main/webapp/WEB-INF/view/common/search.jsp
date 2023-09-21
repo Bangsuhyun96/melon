@@ -46,9 +46,13 @@
                 <tbody>
                 <c:forEach var="song" items="${songs}">
                     <tr>
+                        <c:if test="${!song.artistName.equals(prevArtistName)}">
                         <td><a href="/album/${song.albumId}"><img src="<%= request.getContextPath() %>/resources/Img/artist/${song.artistName}.jpg" alt="가수 이미지"></a></td>
+
                         <td><a href="/artist/${song.artistId}"><p>${song.artistName}</p></a></td>
                         <td><a href="/genre/home"><p>${song.genre}</p></a></td>
+                        </c:if>
+                        <c:set var="prevArtistName" value="${song.artistName}" />
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -62,9 +66,12 @@
                 <tbody>
                     <c:forEach var="song" items="${songs}">
                     <tr>
+                        <c:if test="${!song.albumName.equals(prevArtistName)}">
                         <td><a href="/album/${song.albumId}"><img src="<%= request.getContextPath() %>/resources/Img/song/${song.songName}.jpg" alt="앨범 이미지"></a></td>
                         <td><a href="/album/${song.albumId}"><p>${song.albumName}</p></a></td>
                         <td><a href="/artist/${song.artistId}"><p>${song.artistName}</p></a></td>
+                        </c:if>
+                        <c:set var="prevArtistName" value="${song.albumName}" />
                     </tr>
                     </c:forEach>
                 </tbody>

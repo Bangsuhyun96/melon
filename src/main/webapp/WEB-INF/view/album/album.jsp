@@ -16,7 +16,7 @@
             <div class="album_top">
                 <div class="album_top_img">
                     <div class="album_img">
-                        <img src="<%= request.getContextPath() %>/resources/Img/song/${albumDetails.albumName}.jpg" alt="노래 이미지">
+                        <img src="<%= request.getContextPath() %>/resources/Img/song/${albumDetails.songName}.jpg" alt="노래 이미지">
                     </div>
                 </div>
                 <div class="album_top_text">
@@ -192,7 +192,7 @@
                             <div class="member_comment_mem_content">${albumComments.commentDetail}</div>
                             <fmt:formatDate value="${albumComments.commentDate}" pattern="yyyy-MM-dd" var="formattedCommentDate"/>
                             <div class="member_comment_mem_date">${formattedCommentDate}</div>
-                            <form action="/album/${albumId}/comment/delete/${albumComments.commentId}" method="post" class="delete_btn_box" onsubmit="showDeleteSuccessAlert()">
+                            <form action="/album/${albumId}/comment/delete/${albumComments.commentId}" method="post" class="delete_btn_box" onsubmit="return showDeleteSuccessAlert()">
                                 <c:if test="${!empty user}">
                                     <button type="submit" class="comment_delete_btn">삭제</button>
                                 </c:if>

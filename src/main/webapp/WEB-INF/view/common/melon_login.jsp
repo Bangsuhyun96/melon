@@ -33,6 +33,9 @@ const msg = '${msg}';
 if(msg === '로그인 실패'){
 	alert("아이디 또는 비밀번호를 확인해 주세요.");
 }
+if(msg === '중복된 아이디입니다.'){
+	console.log("중복된 아이디입니다.");
+}
 </script>
 </body>
 </html>

@@ -24,7 +24,7 @@
                 </div>
             </div>
             <c:if test="${!empty user}">
-                <button id="asd" type="button" disabled style="display: none;">${user.name}</button>
+                <button id="asd" type="button" disabled style="display: none;">${user.id}</button>
             </c:if>
             <div class="ticket_payment_body">
                 <div class="ticket_payment_box">

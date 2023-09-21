@@ -13,6 +13,7 @@
             </ul>
         </li>
         <li><a href="/genre/home">장르음악</a></li>
+        <li><a href="/ticket">이용권 구매</a></li>
         <c:if test="${!empty user}">
             <c:if test="${user.role == 1}">
                 <li><a href="/admin">관리자 페이지</a></li>
