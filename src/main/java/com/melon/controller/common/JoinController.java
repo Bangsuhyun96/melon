@@ -11,6 +11,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.melon.dto.common.LoginDto;
 import com.melon.service.common.ILoginService;
 
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("/join")
 public class JoinController {
@@ -24,8 +26,8 @@ public class JoinController {
     }
     
     @PostMapping
-    private String join(LoginDto m, RedirectAttributes rttr) {
-    	return ILoginService.join(m, rttr);
+    private String join(LoginDto m, RedirectAttributes rttr, HttpSession session) {
+    	return ILoginService.join(m, rttr, session);
     }
     
     @GetMapping("/check")

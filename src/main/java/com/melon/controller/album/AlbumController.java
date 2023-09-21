@@ -73,7 +73,7 @@ public class AlbumController {
 	@PostMapping("/{albumId}/comment/write")
 	public String addUserComment(@ModelAttribute CommentDto commentDto,
 								 @PathVariable("albumId") int albumId) {
-		String aa = "aa";
+		String aa = "dlagnlwo";
 		log.info("dto : {}", commentDto);
 		albumService.saveComment(commentDto, albumId, aa);
 		return "redirect:/album/" + albumId;
