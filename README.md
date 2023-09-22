@@ -41,6 +41,8 @@
 
 <div align=left><h2>💻 화면 구성</h2></div>
 
+<img width="20%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/b647cfbc-ea49-4ff7-9c29-b20d3ddd991f.jpg"/>
+
 <div align=left><h2>💡 주요 기능</h2></div>
 
 ### 로그인 및 회원가입 기능
