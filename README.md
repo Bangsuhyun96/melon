@@ -58,9 +58,6 @@
 <div align=center>
     <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/24b0ebe5-c461-4b6d-a50e-bd961939c6de.jpg"/>
     <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/debd1210-6e50-4846-b6c7-246fe5757e92.jpg"/>
-    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/420a1ad1-dc41-4502-ab85-83107af56586.jpg"/>
-</div>
-<div align=center>
     <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/df76913b-39ed-419c-8ac0-33d3073e621f.jpg"/>
 </div>
 
