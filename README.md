@@ -45,6 +45,25 @@
     <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/db45d2c4-acf8-427c-b277-db70fe1f16f8.jpg"/>
     <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/a9126c37-905f-4914-b170-03b4f7c37f4e.jpg"/>
 </div>
+<div align=center>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/6052a0c3-417c-4ce7-8a61-9b467b938f5d.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/1e7611a5-6dd1-4ce5-90cf-51dddba063a7.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/954ec29a-b1d6-4f75-8eaf-dbf52117ffe4.jpg"/>
+</div>
+<div align=center>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/aad51c7a-7489-4d5b-8987-0549c1131e7d.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/2077bab9-908a-4ebf-ac7c-7f819738ada6.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/cf1e6386-c225-4bb5-a5f2-e75a2d29c455.jpg"/>
+</div>
+<div align=center>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/24b0ebe5-c461-4b6d-a50e-bd961939c6de.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/debd1210-6e50-4846-b6c7-246fe5757e92.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/420a1ad1-dc41-4502-ab85-83107af56586.jpg"/>
+</div>
+<div align=center>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/df76913b-39ed-419c-8ac0-33d3073e621f.jpg"/>
+</div>
+
 <div align=left><h2>💡 주요 기능</h2></div>
 
 ### 로그인 및 회원가입 기능
