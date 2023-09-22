@@ -40,9 +40,11 @@
 **😺팀원 임휘재** : 앨범 페이지, 가수 페이지, 좋아요 기능
 
 <div align=left><h2>💻 화면 구성</h2></div>
-
-<img width="35%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/b647cfbc-ea49-4ff7-9c29-b20d3ddd991f.jpg"/>
-
+<div>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/b647cfbc-ea49-4ff7-9c29-b20d3ddd991f.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/db45d2c4-acf8-427c-b277-db70fe1f16f8.jpg"/>
+    <img width="30%" src="https://github.com/Bangsuhyun96/melon/assets/105468233/a9126c37-905f-4914-b170-03b4f7c37f4e.jpg"/>
+</div>
 <div align=left><h2>💡 주요 기능</h2></div>
 
 ### 로그인 및 회원가입 기능
